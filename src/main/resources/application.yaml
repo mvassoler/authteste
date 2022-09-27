@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: ${ENVIRONMENT:dev}
+  application:
+    name: router-service
