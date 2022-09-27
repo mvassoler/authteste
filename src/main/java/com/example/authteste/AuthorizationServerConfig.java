@@ -95,7 +95,7 @@ public class AuthorizationServerConfig {
                         .reuseRefreshTokens(false)
                         .refreshTokenTimeToLive(Duration.ofDays(1))
                         .build())
-                .redirectUri("http://127.0.0.1:8990/authorized")
+                .redirectUri("http://127.0.0.1:8081/authorized")
                 .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
                 .build();
         RegisteredClient xgraccoPassoword = RegisteredClient
